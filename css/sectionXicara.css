@@ -1,0 +1,63 @@
+.section-xicara {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.img-xicara {
+  background-color: #c2c2c2;
+}
+.text-xicara {
+  display: grid;
+  gap: 25px;
+  max-width: 50ch;
+}
+.text-xicara h1 {
+  font-weight: 900;
+}
+.text-xicara p {
+  font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  .section-xicara {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .section-xicara {
+    padding: 0px;
+  }
+  .img-xicara img {
+    margin: 0 auto;
+  }
+  .text-xicara {
+    margin: 0 auto;
+    max-width: 60ch;
+  }
+  .text-xicara h1 {
+    text-align: center;
+  }
+  .text-xicara p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-xicara {
+    max-width: 40ch;
+    padding: 10px;
+    gap: 20px;
+  }
+  .section-xicara {
+    gap: 20px;
+  }
+  .text-xicara h1 {
+    text-align: start;
+    font-size: 20px;
+  }
+  .text-xicara p {
+    text-align: start;
+    font-size: 16px;
+  }
+}

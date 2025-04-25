@@ -1,0 +1,135 @@
+.fotter-div {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.form-redes {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+.form-redes img {
+  max-width: 100%;
+  margin-right: 40px;
+}
+.form-lista {
+  display: flex;
+  gap: 100px;
+}
+.form-lista li {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.form-titulo p {
+  font-weight: 900;
+  cursor: pointer;
+}
+.form-titulo {
+  padding-bottom: 15px;
+}
+.form-lista h5 {
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.form-logo {
+  margin-top: 25px;
+}
+.fotter-imgs {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+.footer-lorem p {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.footer-lorem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-lorem img {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .fotter-div {
+    gap: 90px;
+  }
+  .form-redes img {
+    margin-right: 20px;
+  }
+  .form-lista li {
+    font-size: 13px;
+  }
+  .form-lista h5 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fotter-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-redes {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  .fotter-div {
+    gap: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .form-lista {
+    flex-direction: column;
+    align-self: self-start;
+    gap: 0px;
+  }
+  .form-lista ul div {
+    display: none;
+  }
+  .form-lista ul div.ativo {
+    display: block;
+    padding-left: 20px;
+    animation: slideDown .5s forwards;
+  }
+  .form-lista ul div.ativo li {
+    font-size: 15px;
+  }
+  .form-lista li {
+    font-size: 20px;
+  }
+  .form-titulo {
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  .form-titulo {
+    display: flex;
+  }
+  .form-titulo::after {
+    content: "🡡";
+    display: inline-block;
+    padding-left: 10px;
+  }
+  .form-titulo.ativo::after {
+    content: "🡣";
+  }
+}
+
+@keyframes slideDown{
+  from{
+    opacity: 0;
+    max-height: 0;
+  }
+  to{
+    opacity: 1;
+    max-height: 200px;
+  }
+}

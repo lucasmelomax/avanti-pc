@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+
+h1, h2, h3, p{
+    padding: 0px;
+    margin: 0px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    padding: 0px;
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.weight900{
+    font-weight: 900;
+}

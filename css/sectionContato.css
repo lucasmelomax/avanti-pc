@@ -1,0 +1,36 @@
+.section-contato {
+  position: relative;
+  height: 668px;
+  width: 100%;
+  background: url("../img/contatoMobile.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.section-contato p {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #005cff;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  height: 132px;
+  width: 100%;
+  top: 45%;
+}
+
+@media (max-width: 900px) {
+  .section-contato {
+    background-position: right;
+    height: 468px;
+  }
+  .section-contato p {
+    font-size: 15px;
+    height: 100px;
+    text-align: center;
+  }
+}

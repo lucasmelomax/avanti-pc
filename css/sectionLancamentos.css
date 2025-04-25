@@ -1,0 +1,83 @@
+.card-flex{
+  display: flex;
+  gap: 20px;overflow: hidden;
+  padding: 10px;
+}
+.card-lancamento {
+  border-radius: 10px;
+  position: relative;
+  display: grid;
+  max-width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
+  margin: 20px 0px;
+  padding: 5px;
+}
+.card-lancamento div img{
+     margin: 0 auto;
+}
+.span-novo {
+  position: absolute;
+  background-color: #005cff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+.card-lancamento h3 {
+  font-size: 14px;
+  max-width: 31ch;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  text-align: left;
+}
+.preco-cortado {
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 14px;
+}
+.preco-roupa {
+  font-size: 18px;
+  font-weight: 700;
+}
+.preco-off {
+  background-color: #5ec0be;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+.preco-roupa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.preco-cartao {
+  font-size: 13px;
+  font-weight: 500;
+}
+.preco-cartao span {
+  font-weight: 700;
+}
+.button-comprar {
+  color: white;
+  background-color: #005cff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0px;
+  margin-top: 15px;
+}
+.lancamento{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 60px;
+}
+@media(max-width: 600px){
+  .lancamentos-mobile{
+    display: none;
+  }
+}

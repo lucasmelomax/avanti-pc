@@ -1,0 +1,71 @@
+.section-cadastro-bg {
+  margin-bottom: 50px;
+}
+.section-cadastro p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-cadastro span {
+  color: #005cff;
+}
+.section-cadastro form {
+  background-color: #dedede;
+  padding: 60px 80px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section-cadastro form div {
+  display: flex;
+  align-items: center;
+}
+.section-cadastro form input {
+  background-color: #fff;
+  border: none;
+  padding: 15px 80px 15px 15px;
+  margin-right: 20px;
+  border-radius: 10px;
+  color: #303030;
+  font-weight: 500;
+}
+
+.section-cadastro form label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #303030;
+}
+.section-cadastro form button {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #005cff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .section-cadastro form {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+@media (max-width: 804px) {
+     .section-cadastro form div {
+          flex-direction: column;
+          gap: 20px;
+          align-items: start;
+        }
+        .section-cadastro form button {
+          margin-left: 0px;
+        }
+   }
+   @media (max-width: 500px){
+     .section-cadastro form input {
+          padding: 15px 20px 15px 15px;
+        }
+   }
+   
