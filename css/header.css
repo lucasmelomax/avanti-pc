@@ -46,10 +46,13 @@ header {
   margin-right: 40px;
 }
 
-.header-form img {
+.header-form button {
   position: absolute;
   top: 10px;
   right: 30%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .header-form input {
@@ -96,11 +99,17 @@ header {
   margin: 0 auto;
   padding-bottom: 10px;
 }
-
+.li-primeiro p{
+  padding-right: 40px;
+  cursor: pointer;
+}
+.li-primeiro p:hover{
+  color: #005cff;
+}
 .nav-header ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 0px;
   font-size: 13px;
   align-items: center;
   font-weight: 500;
@@ -129,26 +138,17 @@ header {
   font-weight: 700;
   position: relative;
 }
-
-.li-drop {
-  position: relative;
-}
-
-.dropdown {
-  display: flex;
+.search-result {
   position: absolute;
-  z-index: 200;
-  top: 20px;
-}
-.ul-departamento {
-  display: flex;
-  flex-direction: column;
-  background-color: #005cff;
-}
-.ul-departamento li {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  width: 300px; /* ou o tamanho que seu formulário tiver */
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 201;
 }
 
 @media (max-width: 1200px) {
